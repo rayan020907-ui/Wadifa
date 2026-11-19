@@ -1,0 +1,471 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Wadifa 🌙</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090711;
+    color: #fff0e8;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+    radial-gradient(circle at 20% 20%, #4b153c66, transparent 40%),
+    radial-gradient(circle at 80% 80%, #711b3d44, transparent 40%),
+    linear-gradient(135deg, #090711, #190b20, #100813);
+    z-index: -2;
+}
+
+.page {
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 18px;
+}
+
+.page.active {
+    display: flex;
+    animation: fade 1s ease;
+}
+
+@keyframes fade {
+    from {opacity:0; transform:translateY(25px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+.card {
+    width: 100%;
+    max-width: 680px;
+    padding: 42px 27px;
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(239,177,195,0.3);
+    border-radius: 28px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 0 70px #a02b5822;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(43px, 9vw, 68px);
+    color: #f5c6b7;
+    text-shadow: 0 0 25px #e38ba1;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #eab0c7;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+p {
+    color: #e9dce5;
+    line-height: 2;
+    font-size: 15px;
+    margin: 18px 0;
+}
+
+.gold {
+    color: #e8c18c;
+}
+
+.label {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #d69aaf;
+    font-size: 10px;
+    margin-bottom: 22px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 42px;
+    border-radius: 50px;
+    border: 1px solid #e9b5c7;
+    background: linear-gradient(135deg,#a63b62,#54203f);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0 0 25px #d85b8a44;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 0 40px #e77ca6;
+}
+
+.item {
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #d99bb52b;
+    background: linear-gradient(120deg,#ffffff09,#d86c9210);
+    border-radius: 17px;
+    line-height: 1.8;
+}
+
+.item b {
+    color: #f1c1a9;
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 24px;
+}
+
+.emoji {
+    font-size: 35px;
+    margin: 22px 0;
+    letter-spacing: 8px;
+}
+
+#timer {
+    font-family: 'Cormorant Garamond',serif;
+    font-size: 110px;
+    color: #f7c3d1;
+    text-shadow: 0 0 40px #ff77a9;
+}
+
+#particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    bottom: -40px;
+    animation: rise linear forwards;
+    opacity: .8;
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.line {
+    width: 90px;
+    height: 1px;
+    background: #e4a7b8;
+    margin: 25px auto;
+}
+
+.small {
+    font-size: 11px;
+    color: #b998a9;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- PAGE 1 -->
+
+<section class="page active" id="p1">
+<div class="card">
+
+<div class="label">A little surprise for someone special</div>
+
+<div class="emoji">🌙 ✨ 🌹</div>
+
+<h1>Dear Wadifa</h1>
+
+<h2>A Beautiful Soul</h2>
+
+<div class="line"></div>
+
+<p>
+Some people possess a beauty that goes beyond what
+words can explain. Wadifa, you have that special charm.
+Your beautiful appearance, graceful presence and the
+little things that make you who you are deserve to be
+appreciated.
+</p>
+
+<p>
+Beauty is not only about how someone looks.
+It is also about their personality, kindness,
+and the way they carry themselves.
+And there is something genuinely lovely about you.
+</p>
+
+<p class="gold">
+May Allah always protect your smile, bless your dreams
+and fill your life with peace, happiness and success.
+</p>
+
+<button onclick="go(2)">Turn the page ✨</button>
+
+</div>
+</section>
+
+
+<!-- PAGE 2 -->
+
+<section class="page" id="p2">
+<div class="card">
+
+<div class="label">Chapter Two</div>
+
+<h1>Three Little Things</h1>
+
+<div class="item">
+🌹 <b>Your Elegance</b>
+<p>You have a naturally graceful presence that makes you stand out.</p>
+</div>
+
+<div class="item">
+✨ <b>Your Smile</b>
+<p>Your smile adds warmth and happiness to the little moments.</p>
+</div>
+
+<div class="item">
+🦋 <b>Your Personality</b>
+<p>Your individuality is something worth appreciating and celebrating.</p>
+</div>
+
+<button onclick="go(3)">There's More →</button>
+
+</div>
+</section>
+
+
+<!-- PAGE 3 -->
+
+<section class="page" id="p3">
+<div class="card">
+
+<div class="label">Chapter Three</div>
+
+<h1>Little Details of You</h1>
+
+<div class="item">
+👀 <b>Your Eyes</b>
+<p>Your eyes have a beautiful charm and an unforgettable elegance.</p>
+</div>
+
+<div class="item">
+🌸 <b>Your Smile & Lips</b>
+<p>Your smile is one of those little things that makes your appearance so lovely.</p>
+</div>
+
+<div class="item">
+🌹 <b>Your Hair</b>
+<p>Your hair adds a beautiful touch to your overall appearance.</p>
+</div>
+
+<div class="item">
+🦋 <b>Your Nose</b>
+<p>A delicate little feature that adds to your unique beauty.</p>
+</div>
+
+<button onclick="go(4)">Open Your Award 🏆</button>
+
+</div>
+</section>
+
+
+<!-- PAGE 4 -->
+
+<section class="page" id="p4">
+<div class="card">
+
+<div class="emoji">👑 🏆 ✨</div>
+
+<div class="label">The Most Special Announcement</div>
+
+<h1>The Best Girl Award</h1>
+
+<h2>And the winner is...</h2>
+
+<div class="line"></div>
+
+<h1 style="font-size:65px;">WADIFA</h1>
+
+<p>
+For her beautiful presence, charming personality,
+unique qualities and all the little things
+that make her special.
+</p>
+
+<p class="gold">
+A little award for someone who deserves
+to be appreciated.
+</p>
+
+<button onclick="countdown()">Reveal Your Surprise 💌</button>
+
+</div>
+</section>
+
+
+<!-- PAGE 5 -->
+
+<section class="page" id="p5">
+<div class="card">
+
+<div class="emoji">🌙 ✨ 💗</div>
+
+<h1>Wait For It...</h1>
+
+<p>Something special is waiting for you.</p>
+
+<div id="timer">10</div>
+
+<p class="gold">A little countdown dedicated to Wadifa.</p>
+
+</div>
+</section>
+
+
+<!-- PAGE 6 -->
+
+<section class="page" id="p6">
+<div class="card">
+
+<div class="emoji">🌹 🦋 💗 ✨</div>
+
+<div class="label">The Final Surprise</div>
+
+<h1>Wadifa</h1>
+
+<h2>You Are Truly Special!</h2>
+
+<div class="line"></div>
+
+<p>
+Never stop believing in yourself.
+Keep smiling, keep growing and keep working
+towards everything your heart dreams of.
+</p>
+
+<p>
+May Allah protect you wherever you go,
+make your difficult days easier,
+grant you beautiful opportunities
+and bless you with success in this life and the Hereafter.
+</p>
+
+<h2 class="gold">Stay Blessed Always 🤍</h2>
+
+<div class="emoji">🌙 🤍 🌷 🦋 🌹</div>
+
+<p class="small">
+A little website made with sincerity and appreciation.
+</p>
+
+<button onclick="location.reload()">Experience Again ↻</button>
+
+</div>
+</section>
+
+
+<script>
+
+function go(number) {
+
+document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+});
+
+document.getElementById('p' + number).classList.add('active');
+
+window.scrollTo({top:0, behavior:'smooth'});
+
+}
+
+let countdownStarted = false;
+
+function countdown() {
+
+if(countdownStarted) return;
+countdownStarted = true;
+
+go(5);
+
+let seconds = 10;
+let timer = document.getElementById('timer');
+
+timer.innerText = seconds;
+
+let interval = setInterval(() => {
+
+seconds--;
+
+timer.innerText = seconds;
+
+if(seconds <= 0) {
+
+clearInterval(interval);
+
+setTimeout(() => {
+    go(6);
+}, 800);
+
+}
+
+},1000);
+
+}
+
+
+// Floating romantic particles
+
+const icons = ['💗','✨','🌸','🤍','🌹','🦋'];
+
+function createParticle() {
+
+let particle = document.createElement('span');
+
+particle.className = 'particle';
+
+particle.innerText =
+icons[Math.floor(Math.random()*icons.length)];
+
+particle.style.left = Math.random()*100 + 'vw';
+
+particle.style.fontSize =
+(14 + Math.random()*20) + 'px';
+
+particle.style.animationDuration =
+(6 + Math.random()*7) + 's';
+
+document.getElementById('particles').appendChild(particle);
+
+setTimeout(() => {
+particle.remove();
+},14000);
+
+}
+
+setInterval(createParticle,600);
+
+</script>
+
+</body>
+</html>
+```
